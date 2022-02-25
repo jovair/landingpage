@@ -22,7 +22,7 @@ Required field: true
 
 Type of media: image
 
-
+------
 
 Estrutura: component
 
@@ -36,73 +36,73 @@ Required field: false
 
 Icon: H
 
+------
 
+Estrutura: text
 
-​	Estrutura: text
+Nome do campo: title
 
-​	Nome do campo: title
+Tipo do campo: short text
 
-​	Tipo do campo: short text
+Required field: true
 
-​	Required field: true
+------
 
+Estrutura: text
 
+Nome do campo: description
 
-​	Estrutura: text
+Tipo do campo: long text
 
-​	Nome do campo: description
+Required field: true
 
-​	Tipo do campo: long text
+------
 
-​	Required field: true
+Estrutura: button
 
+Nome do campo: button
 
+Category: page
 
-​	Estrutura: button
+Tipo do campo: single component
 
-​	Nome do campo: button
+Required field: false
 
-​	Category: page
+Icon: url
 
-​	Tipo do campo: single component
+------
 
-​	Required field: false
+Estrutura: text
 
-​	Icon: url
+Nome do campo: label
 
+Tipo do campo: single text
 
+Required field: true
 
-​		Estrutura: text
+Maximum length: 20
 
-​		Nome do campo: label
+------
 
-​		Tipo do campo: single text
+Estrutura: text
 
-​		Required field: true
+Nome do campo: url
 
-​		Maximum length: 20
+Tipo do campo: single text
 
-​		
+Required field: true
 
-​		Estrutura: text
+------
 
-​		Nome do campo: url
+Estrutura: text
 
-​		Tipo do campo: single text
+Nome do campo: image
 
-​		Required field: true
+Tipo do campo: single media
 
+Required field: true
 
-
-​	Estrutura: text
-
-​	Nome do campo: image
-
-​	Tipo do campo: single media
-
-​	Required field: true
-
-​	Type of media: Images
+Type of media: Images
 
 ------
 
