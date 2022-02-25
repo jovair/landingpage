@@ -1,648 +1,634 @@
-# Curso React Avançado
+- Curso React Avançado
 
-Essa landing page é um módulo extra do curso React Avançado, ministrado pelo Prof. Willian Justen para introduzir o Strapi como CMS que será usado como ferramenta para a construção do Projeto Won Games.
+  Essa landing page é um módulo extra do curso React Avançado, ministrado pelo Prof. Willian Justen para introduzir o Strapi como CMS que será usado como ferramenta para a construção do Projeto Won Games.
 
-## Estrutura do Projeto
+  ## Estrutura do Projeto
 
-Tipo: Single Page
+  Tipo: Single Page
 
-Nome da página: LandingPage
+  Nome da página: LandingPage
 
-### Campos que compõem a página
+  ### Campos que compõem a página
 
-### Header
+  ### Header
 
-- Estrutura: media
+  - Estrutura: media
 
-- Nome do campo: logo
+  - Nome do campo: logo
 
-- Tipo do campo: single media
+  - Tipo do campo: single media
 
-- Required field: true
+  - Required field: true
 
-- Type of media: image
+  - Type of media: image
 
-------
+  ------
 
-- Estrutura: component
+  - Estrutura: component
 
-- Nome do campo: header
+  - Nome do campo: header
 
-- Category: page
+  - Category: page
 
-- Tipo do campo: single component
+  - Tipo do campo: single component
 
-- Required field: false
+  - Required field: false
 
-- Icon: H
+  - Icon: H
 
-------
+  ------
 
-- Estrutura: text
+  - 
+    - Estrutura: text
+    - Nome do campo: title
+    - Tipo do campo: short text
+    - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: text
 
-- Required field: true
+  - Nome do campo: description
 
-------
+  - Tipo do campo: long text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: description
+  ------
 
-- Tipo do campo: long text
+  - Estrutura: button
 
-- Required field: true
+  - Nome do campo: button
 
-------
+  - Category: page
 
-- Estrutura: button
+  - Tipo do campo: single component
 
-- Nome do campo: button
+  - Required field: false
 
-- Category: page
+  - Icon: url
 
-- Tipo do campo: single component
+  ------
 
-- Required field: false
+  - Estrutura: text
 
-- Icon: url
+  - Nome do campo: label
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: label
+  - Maximum length: 20
 
-- Tipo do campo: short text
+  ------
 
-- Required field: true
+  - Estrutura: text
 
-- Maximum length: 20
+  - Nome do campo: url
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: url
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: image
 
-- Required field: true
+  - Nome do campo: image
 
-------
+  - Tipo do campo: single media
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: image
+  - Type of media: Images
 
-- Tipo do campo: single media
+  ------
 
-- Required field: true
+  ### About Project
 
-- Type of media: Images
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionAboutProject
 
-### About Project
+  - Category: page
 
-- Estrutura: component
+  - Tipo do campo: single component
 
-- Nome do campo: sectionAboutProject
+  - Required field: false
 
-- Category: page
+  - Icon: Information
 
-- Tipo do campo: single component
+  ------
 
-- Required field: false
+  - Estrutura: text
 
-- Icon: i
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: rich text
 
-- Required field: true
+  - Nome do campo: description
 
-------
+  - Required field: true
 
-- Estrutura: rich text
+  ------
 
-- Nome do campo: description
+  - Estrutura: media
 
-- Required field: true
+  - Nome do campo: image
 
-------
+  - Tipo do campo: single media
 
-- Estrutura: image
+  - Required field: true
 
-- Nome do campo: image
+  - Type of media: images
 
-- Tipo do campo: single media
+  ------
 
-- Required field: true
+  ### Section Tech
 
-- Type of media: images
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionTech
+  - Category: page
 
-### Section Tech
+  - Tipo do campo: single component
 
-- Estrutura: component
+  - Icon: tool
 
-- Nome do campo: sectionTech
-- Category: page
+  ------
 
-- Tipo do campo: single component
+  - Estrutura: text
 
-- Icon: tool
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: component
 
-- Required field: true
+  - Nome do campo: techIcons
+  - Category: page
 
-------
+  - Tipo do campo: repeatable component
+  - Maximum value: 10 
+  - Minimum value: 5
 
-- Estrutura: component
+  - Icon: tool
 
-- Nome do campo: techIcons
-- Category: page
+  ------
 
-- Tipo do campo: repeatable component
-- Maximum value: 10 
-- Minimum value: 5
+  - Estrutura: media
 
-- Icon: tool
+  - Nome do campo: icon
 
-------
+  - Tipo do campo: multiple media
+  - type of media: images
 
-- Estrutura: image
+  - Required field: true
 
-- Nome do campo: icon
+  ------
 
-- Tipo do campo: multiple media
-- type of media: images
+  - Estrutura: text
 
-- Required field: true
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  ### Section Concepts
 
-- Required field: true
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionConcepts
+  - Category: page
 
-### Section Concepts
+  - Tipo do campo: single component
 
-- Estrutura: component
+  - Icon: página
 
-- Nome do campo: sectionConcepts
-- Category: page
+  ------
 
-- Tipo do campo: single component
+  - Estrutura: text
 
-- Icon: página
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: component
 
-- Required field: true
+  - Nome do campo: concepts
+  - Category: page
 
-------
+  - Tipo do campo: repeatable component
 
-- Estrutura: component
+  - Icon: outra página
 
-- Nome do campo: concepts
-- Category: page
+  ------
 
-- Tipo do campo: repeatable component
+  - Estrutura: text
 
-- Icon: outra página
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  ### Section Modules
 
-- Required field: true
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionModules
+  - Category: page
 
-### Section Modules
+  - Tipo do campo: single component
 
-- Estrutura: component
+  - Icon: livro
 
-- Nome do campo: sectionModules
-- Category: page
+  ------
 
-- Tipo do campo: single component
+  - Estrutura: text
 
-- Icon: livro
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: component
 
-- Required field: true
+  - Nome do campo: modules
+  - Category: page
 
-------
+  - Tipo do campo: repeateble component
+  - Requered: true
+  - minimum: 2
 
-- Estrutura: component
+  - Icon: paper
 
-- Nome do campo: modules
-- Category: page
+  ------
 
-- Tipo do campo: repeateble component
-- Requered: true
-- minimum: 2
+  - Estrutura: text
 
-- Icon: paper
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: text
 
-- Required field: true
+  - Nome do campo: subTitle
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: subTitle
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: rich text
 
-- Required field: true
+  - Nome do campo: description
 
-------
+  - Required field: true
 
-- Estrutura: rich text
+  ------
 
-- Nome do campo: description
+  ### Section Agenda
 
-- Required field: true
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionAgenda
+  - Category: page
 
-### Section Agenda
+  - Tipo do campo: single component
+  - Requered: true
 
-- Estrutura: component
+  - Icon: calendar
 
-- Nome do campo: sectionAgenda
-- Category: page
+  ------
 
-- Tipo do campo: single component
-- Requered: true
+  - Estrutura: text
 
-- Icon: schedule
+  - Nome do campo: title
 
-------
+  - Tipo do campo: short text
 
-- Estrutura: text
+  - Required field: true
 
-- Nome do campo: title
+  ------
 
-- Tipo do campo: short text
+  - Estrutura: rich text
 
-- Required field: true
+  - Nome do campo: description
 
-------
+  - Required field: true
 
-- Estrutura: rich text
+  ------
 
-- Nome do campo: description
+  ### Pricing Box
 
-- Required field: true
+  - Estrutura: component
+  - Nome do campo: pricingBox
+  - Category: page
+  - Tipo do campo: single component
+  - Required: true
+  - Icon: $
 
-------
+  ------
 
-- Estrutura: component
+  - Estrutura: number
 
-- Nome do campo: pricingBox
-- Category: page
+  - Nome do campo: totalPrice
 
-- Tipo do campo: single component
-- Required: true
+  - Tipo do campo: integer
 
-- Icon: $
+  - Required field: true
+  - Default value: 415
 
-------
+  ------
 
-- Estrutura: number
+  - Estrutura: number
 
-- Nome do campo: pricingBox
+  - Nome do campo: numberInstallments
 
-- Tipo do campo: integer
+  - Tipo do campo: integer
 
-- Required field: true
-- Default value: 415
+  - Required field: true
 
-------
+  ------
 
-- Estrutura: number
+  - Estrutura: number
 
-- Nome do campo: numberInstallments
+  - Nome do campo: priceInstallments
 
-- Tipo do campo: integer
+  - Tipo do campo: integer
 
-- Required field: true
+  - Required field: true
 
-------
+  ------
 
-- Estrutura: number
+  - Estrutura: rich text
 
-- Nome do campo: numberInstallments
+  - Nome do campo: benefits
 
-- Tipo do campo: integer
+  - Default value: Create items as bullet list
 
-- Required field: true
+  - Required field: true
 
-------
+  ------
 
-- Estrutura: number
+  - Estrutura: component
 
-- Nome do campo: priceInstallments
+  - Nome do campo: button
+  - Category: page
 
-- Tipo do campo: integer
+  - Tipo do campo: Use an existing component
+  - Name: button
 
-- Required field: true
+  - Type: single component
+  - Select component: button
 
-------
+  ------
 
-- Estrutura: rich text
+  ### Collection Authors
 
-- Nome do campo: benefits
+  - Estrutura: collection type
 
-- Default value: Create items as bullet list
+  - Nome do campo: author
 
-- Required field: true
+  ------
 
-------
+  - Estrutura: media
 
-- Estrutura: component
+  - Nome do campo: photo
+  - Category: page
 
-- Nome do campo: button
-- Category: page
+  - Tipo do campo: single media
+  - Requered: true
 
-- Tipo do campo: Use an existing component
-- Name: button
+  - Type of media: images
 
-- Type: single component
-- Select component: button
+  ------
 
-------
+  - Estrutura: text
 
-### Collection Authors
+  - Nome do campo: name
 
-- Estrutura: collection type
+  - Tipo do campo: short text
 
-- Nome do campo: author
+  - Required field: true
 
-------
+  ------
 
-- Estrutura: media
+  - Estrutura: text
 
-- Nome do campo: photo
-- Category: page
+  - Nome do campo: role
 
-- Tipo do campo: single media
-- Requered: true
+  - Tipo do campo: short text
 
-- Type of media: images
+  - Required field: true
 
-------
+  ------
 
-- Estrutura: text
+  - Estrutura: component
 
-- Nome do campo: name
+  - Nome do campo: socialLinks
+  - Category: page
 
-- Tipo do campo: short text
+  - Tipo do campo: repeatable component
+  - Required: true
 
-- Required field: true
+  - Icon: network
 
-------
+  ------
 
-- Estrutura: text
+  - Estrutura: enumeration
 
-- Nome do campo: role
+  - Nome do campo: title
 
-- Tipo do campo: short text
+  - Values
+    - Github
+    - Twitter
+    - Dribble
+    - LinkedIn
+    - Facebook
+  - Default value: Twitter
+  - Required: true
 
-- Required field: true
+  ------
 
-------
+  - Estrutura: text
 
-- Estrutura: component
+  - Nome do campo: url
+  - Tipo do campo: short text
 
-- Nome do campo: socialLinks
-- Category: page
+  - Required: true
 
-- Tipo do campo: repeatable component
-- Required: true
+  ------
 
-- Icon: network
+  - Estrutura:  text
 
-------
+  - Nome do campo: description
+  - Tipo do campo: long text
 
-- Estrutura: enumeration
+  - Required: true
 
-- Nome do campo: title
+  ------
 
-- Values
-  - Github
-  - Twitter
-  - Dribble
-  - LinkedIn
-  - Facebook
-- Default value: Twitter
-- Required: true
+  ### Section About Us
 
-------
+  - Estrutura: component
 
-- Estrutura: text
+  - Nome do campo: sectionAboutUs
+  - Category: page
 
-- Nome do campo: url
-- Tipo do campo: short text
+  - Tipo do campo: single component
+  - Required: true
 
-- Required: true
+  - Icon: author
 
-------
+  ------
 
-- Estrutura:  text
+  - Estrutura:  text
 
-- Nome do campo: description
-- Tipo do campo: long text
+  - Nome do campo: title
+  - Tipo do campo: short text
 
-- Required: true
+  - Required: true
 
-------
+  ------
 
-### Section About Us
+  - Estrutura:  relation
 
-- Estrutura: component
+  - Relação: 1 para muitos
 
-- Nome do campo: sectionAboutUs
-- Category: page
+  ------
 
-- Tipo do campo: single component
-- Required: true
+  ### Section Reviews
 
-- Icon: pessoa
+  - Estrutura: component
 
-------
+  - Nome do campo: sectionReviews
+  - Category: page
 
-- Estrutura:  text
+  - Tipo do campo: single component
+  - Required: true
 
-- Nome do campo: title
-- Tipo do campo: long text
+  - Icon: star
 
-- Required: true
+  ------
 
-------
+  - Estrutura:  text
 
-- Estrutura:  relation
+  - Nome do campo: title
+  - Tipo do campo: long text
 
-- Relação: 1 para muitos
+  - Required: true
 
-------
+  ------
 
-### Section Reviews
+  - Estrutura: component
+  - Nome do campo: reviews
+  - Category: page
+  - Tipo do campo: repeatable component
+  - Required: true
+  - Minimum value: 4
+  - Icon: star
 
-- Estrutura: component
+  ------
 
-- Nome do campo: sectionReviews
-- Category: page
+  - Estrutura:  text
 
-- Tipo do campo: single component
-- Required: true
+  - Nome do campo: name
+  - Tipo do campo: short text
 
-- Icon: star
+  - Required: true
 
-------
+  ------
 
-- Estrutura:  text
+  - Estrutura:  text
 
-- Nome do campo: title
-- Tipo do campo: long text
+  - Nome do campo: text
+  - Tipo do campo: long text
 
-- Required: true
+  - Required: true
 
-------
+  ------
 
-- Estrutura: component
-- Nome do campo: reviews
-- Category: page
-- Tipo do campo: repeatable component
-- Required: true
-- Minimum value: 4
-- Icon: star
+  - Estrutura:  media
 
-------
+  - Nome do campo: photo
+  - Tipo do campo: single media
+  - type of media: imagens
 
-- Estrutura:  text
+  - Required: false
 
-- Nome do campo: name
-- Tipo do campo: short text
+  ------
 
-- Required: true
+  ### Section FAQ
 
-------
+  - Estrutura: component
+  - Nome do campo: sectionFaq
+  - Category: page
+  - Tipo do campo: single component
+  - Required: true
+  - Icon: question
 
-- Estrutura:  text
+  ------
 
-- Nome do campo: text
-- Tipo do campo: long text
+  - Estrutura:  text
 
-- Required: true
+  - Nome do campo: title
+  - Tipo do campo: long text
 
-------
+  - Required: true
 
-- Estrutura:  media
+  ------
 
-- Nome do campo: photo
-- Tipo do campo: single media
-- type of media: imagens
+  - Estrutura: component
+  - Nome do campo: questions
+  - Category: page
+  - Tipo do campo: repeatable component
+  - Required: true
+  - Minimum value: 2
+  - Icon: question
 
-- Required: false
+  ------
 
-------
+  - Estrutura:  text
 
-### Section FAQ
+  - Nome do campo: question
+  - Tipo do campo: long text
 
-- Estrutura: component
-- Nome do campo: sectionFaq
-- Category: page
-- Tipo do campo: single component
-- Required: true
-- Minimum value: 4
-- Icon: question
+  - Required: true
 
-------
+  ------
 
-- Estrutura:  text
+  - Estrutura: rich text
 
-- Nome do campo: title
-- Tipo do campo: long text
+  - Nome do campo: answer
+  - Tipo do campo: long text
 
-- Required: true
-
-------
-
-- Estrutura: component
-- Nome do campo: questions
-- Category: page
-- Tipo do campo: repeatable component
-- Required: true
-- Minimum value: 2
-- Icon: question
-
-------
-
-- Estrutura:  text
-
-- Nome do campo: question
-- Tipo do campo: long text
-
-- Required: true
-
-------
-
-- Estrutura: rich text
-
-- Nome do campo: answer
-- Tipo do campo: long text
-
-- Required: true
+  - Required: true
