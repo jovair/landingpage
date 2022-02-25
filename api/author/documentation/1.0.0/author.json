@@ -520,7 +520,8 @@
           "photo",
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "id": {
@@ -600,35 +601,37 @@
             "type": "string"
           },
           "socialLinks": {
-            "type": "object",
-            "required": [
-              "id",
-              "title",
-              "url",
-              "description"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string",
-                "default": "Twitter",
-                "enum": [
-                  "Github",
-                  "Twitter",
-                  "Dribble",
-                  "LinkedIn",
-                  "Facebook"
-                ]
-              },
-              "url": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string",
+                  "default": "Twitter",
+                  "enum": [
+                    "Github",
+                    "Twitter",
+                    "Dribble",
+                    "LinkedIn",
+                    "Facebook"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                }
               }
             }
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -640,7 +643,8 @@
         "required": [
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "name": {
@@ -650,35 +654,37 @@
             "type": "string"
           },
           "socialLinks": {
-            "type": "object",
-            "required": [
-              "id",
-              "title",
-              "url",
-              "description"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string",
-                "default": "Twitter",
-                "enum": [
-                  "Github",
-                  "Twitter",
-                  "Dribble",
-                  "LinkedIn",
-                  "Facebook"
-                ]
-              },
-              "url": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string",
+                  "default": "Twitter",
+                  "enum": [
+                    "Github",
+                    "Twitter",
+                    "Dribble",
+                    "LinkedIn",
+                    "Facebook"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                }
               }
             }
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

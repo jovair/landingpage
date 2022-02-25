@@ -325,7 +325,7 @@
           "sectionConcepts",
           "sectionModules",
           "sectionAgenda",
-          "PricingBox",
+          "pricingBox",
           "sectionAboutUs",
           "sectionReviews",
           "sectionFaq"
@@ -758,7 +758,7 @@
                   "required": [
                     "id",
                     "title",
-                    "subTitle",
+                    "subtitle",
                     "description"
                   ],
                   "properties": {
@@ -768,7 +768,7 @@
                     "title": {
                       "type": "string"
                     },
-                    "subTitle": {
+                    "subtitle": {
                       "type": "string"
                     },
                     "description": {
@@ -799,13 +799,13 @@
               }
             }
           },
-          "PricingBox": {
+          "pricingBox": {
             "type": "object",
             "required": [
               "id",
               "totalPrice",
               "numberInstallments",
-              "priceInstallments",
+              "priceInstallment",
               "benefits",
               "button"
             ],
@@ -820,7 +820,7 @@
               "numberInstallments": {
                 "type": "integer"
               },
-              "priceInstallments": {
+              "priceInstallment": {
                 "type": "integer"
               },
               "benefits": {
@@ -873,7 +873,8 @@
                     "photo",
                     "name",
                     "role",
-                    "socialLinks"
+                    "socialLinks",
+                    "description"
                   ],
                   "properties": {
                     "id": {
@@ -890,6 +891,9 @@
                     },
                     "socialLinks": {
                       "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
                     },
                     "published_at": {
                       "type": "string"
@@ -1064,7 +1068,7 @@
           "sectionConcepts",
           "sectionModules",
           "sectionAgenda",
-          "PricingBox",
+          "pricingBox",
           "sectionAboutUs",
           "sectionReviews",
           "sectionFaq"
@@ -1427,7 +1431,7 @@
                   "required": [
                     "id",
                     "title",
-                    "subTitle",
+                    "subtitle",
                     "description"
                   ],
                   "properties": {
@@ -1437,7 +1441,7 @@
                     "title": {
                       "type": "string"
                     },
-                    "subTitle": {
+                    "subtitle": {
                       "type": "string"
                     },
                     "description": {
@@ -1468,13 +1472,13 @@
               }
             }
           },
-          "PricingBox": {
+          "pricingBox": {
             "type": "object",
             "required": [
               "id",
               "totalPrice",
               "numberInstallments",
-              "priceInstallments",
+              "priceInstallment",
               "benefits",
               "button"
             ],
@@ -1489,7 +1493,7 @@
               "numberInstallments": {
                 "type": "integer"
               },
-              "priceInstallments": {
+              "priceInstallment": {
                 "type": "integer"
               },
               "benefits": {
@@ -1542,7 +1546,8 @@
                     "photo",
                     "name",
                     "role",
-                    "socialLinks"
+                    "socialLinks",
+                    "description"
                   ],
                   "properties": {
                     "id": {
@@ -1559,6 +1564,9 @@
                     },
                     "socialLinks": {
                       "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
                     },
                     "published_at": {
                       "type": "string"

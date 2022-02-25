@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/25/2022 2:58:12 PM"
+    "x-generation-date": "02/25/2022 4:40:30 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3103,7 +3103,8 @@
           "photo",
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "id": {
@@ -3183,35 +3184,37 @@
             "type": "string"
           },
           "socialLinks": {
-            "type": "object",
-            "required": [
-              "id",
-              "title",
-              "url",
-              "description"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string",
-                "default": "Twitter",
-                "enum": [
-                  "Github",
-                  "Twitter",
-                  "Dribble",
-                  "LinkedIn",
-                  "Facebook"
-                ]
-              },
-              "url": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string",
+                  "default": "Twitter",
+                  "enum": [
+                    "Github",
+                    "Twitter",
+                    "Dribble",
+                    "LinkedIn",
+                    "Facebook"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                }
               }
             }
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -3223,7 +3226,8 @@
         "required": [
           "name",
           "role",
-          "socialLinks"
+          "socialLinks",
+          "description"
         ],
         "properties": {
           "name": {
@@ -3233,35 +3237,37 @@
             "type": "string"
           },
           "socialLinks": {
-            "type": "object",
-            "required": [
-              "id",
-              "title",
-              "url",
-              "description"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string",
-                "default": "Twitter",
-                "enum": [
-                  "Github",
-                  "Twitter",
-                  "Dribble",
-                  "LinkedIn",
-                  "Facebook"
-                ]
-              },
-              "url": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string",
+                  "default": "Twitter",
+                  "enum": [
+                    "Github",
+                    "Twitter",
+                    "Dribble",
+                    "LinkedIn",
+                    "Facebook"
+                  ]
+                },
+                "url": {
+                  "type": "string"
+                }
               }
             }
+          },
+          "description": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -3285,7 +3291,7 @@
           "sectionConcepts",
           "sectionModules",
           "sectionAgenda",
-          "PricingBox",
+          "pricingBox",
           "sectionAboutUs",
           "sectionReviews",
           "sectionFaq"
@@ -3718,7 +3724,7 @@
                   "required": [
                     "id",
                     "title",
-                    "subTitle",
+                    "subtitle",
                     "description"
                   ],
                   "properties": {
@@ -3728,7 +3734,7 @@
                     "title": {
                       "type": "string"
                     },
-                    "subTitle": {
+                    "subtitle": {
                       "type": "string"
                     },
                     "description": {
@@ -3759,13 +3765,13 @@
               }
             }
           },
-          "PricingBox": {
+          "pricingBox": {
             "type": "object",
             "required": [
               "id",
               "totalPrice",
               "numberInstallments",
-              "priceInstallments",
+              "priceInstallment",
               "benefits",
               "button"
             ],
@@ -3780,7 +3786,7 @@
               "numberInstallments": {
                 "type": "integer"
               },
-              "priceInstallments": {
+              "priceInstallment": {
                 "type": "integer"
               },
               "benefits": {
@@ -3833,7 +3839,8 @@
                     "photo",
                     "name",
                     "role",
-                    "socialLinks"
+                    "socialLinks",
+                    "description"
                   ],
                   "properties": {
                     "id": {
@@ -3850,6 +3857,9 @@
                     },
                     "socialLinks": {
                       "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
                     },
                     "published_at": {
                       "type": "string"
@@ -4024,7 +4034,7 @@
           "sectionConcepts",
           "sectionModules",
           "sectionAgenda",
-          "PricingBox",
+          "pricingBox",
           "sectionAboutUs",
           "sectionReviews",
           "sectionFaq"
@@ -4387,7 +4397,7 @@
                   "required": [
                     "id",
                     "title",
-                    "subTitle",
+                    "subtitle",
                     "description"
                   ],
                   "properties": {
@@ -4397,7 +4407,7 @@
                     "title": {
                       "type": "string"
                     },
-                    "subTitle": {
+                    "subtitle": {
                       "type": "string"
                     },
                     "description": {
@@ -4428,13 +4438,13 @@
               }
             }
           },
-          "PricingBox": {
+          "pricingBox": {
             "type": "object",
             "required": [
               "id",
               "totalPrice",
               "numberInstallments",
-              "priceInstallments",
+              "priceInstallment",
               "benefits",
               "button"
             ],
@@ -4449,7 +4459,7 @@
               "numberInstallments": {
                 "type": "integer"
               },
-              "priceInstallments": {
+              "priceInstallment": {
                 "type": "integer"
               },
               "benefits": {
@@ -4502,7 +4512,8 @@
                     "photo",
                     "name",
                     "role",
-                    "socialLinks"
+                    "socialLinks",
+                    "description"
                   ],
                   "properties": {
                     "id": {
@@ -4519,6 +4530,9 @@
                     },
                     "socialLinks": {
                       "type": "component"
+                    },
+                    "description": {
+                      "type": "string"
                     },
                     "published_at": {
                       "type": "string"
