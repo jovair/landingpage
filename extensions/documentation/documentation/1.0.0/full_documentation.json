@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/25/2022 4:40:30 PM"
+    "x-generation-date": "02/26/2022 10:33:28 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3567,7 +3567,7 @@
             "required": [
               "id",
               "title",
-              "techIcons"
+              "techicons"
             ],
             "properties": {
               "id": {
@@ -3576,7 +3576,7 @@
               "title": {
                 "type": "string"
               },
-              "techIcons": {
+              "techicons": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -3793,26 +3793,23 @@
                 "type": "string"
               },
               "button": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "label",
-                    "url"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string",
-                      "default": "Comprar",
-                      "maxLength": 20
-                    },
-                    "url": {
-                      "type": "string"
-                    }
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
                   }
                 }
               }
@@ -4240,7 +4237,7 @@
             "required": [
               "id",
               "title",
-              "techIcons"
+              "techicons"
             ],
             "properties": {
               "id": {
@@ -4249,7 +4246,7 @@
               "title": {
                 "type": "string"
               },
-              "techIcons": {
+              "techicons": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -4466,26 +4463,23 @@
                 "type": "string"
               },
               "button": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "label",
-                    "url"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string",
-                      "default": "Comprar",
-                      "maxLength": 20
-                    },
-                    "url": {
-                      "type": "string"
-                    }
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
                   }
                 }
               }

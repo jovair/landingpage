@@ -601,7 +601,7 @@
             "required": [
               "id",
               "title",
-              "techIcons"
+              "techicons"
             ],
             "properties": {
               "id": {
@@ -610,7 +610,7 @@
               "title": {
                 "type": "string"
               },
-              "techIcons": {
+              "techicons": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -827,26 +827,23 @@
                 "type": "string"
               },
               "button": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "label",
-                    "url"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string",
-                      "default": "Comprar",
-                      "maxLength": 20
-                    },
-                    "url": {
-                      "type": "string"
-                    }
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
                   }
                 }
               }
@@ -1274,7 +1271,7 @@
             "required": [
               "id",
               "title",
-              "techIcons"
+              "techicons"
             ],
             "properties": {
               "id": {
@@ -1283,7 +1280,7 @@
               "title": {
                 "type": "string"
               },
-              "techIcons": {
+              "techicons": {
                 "type": "array",
                 "items": {
                   "type": "object",
@@ -1500,26 +1497,23 @@
                 "type": "string"
               },
               "button": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id",
-                    "label",
-                    "url"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "label": {
-                      "type": "string",
-                      "default": "Comprar",
-                      "maxLength": 20
-                    },
-                    "url": {
-                      "type": "string"
-                    }
+                "type": "object",
+                "required": [
+                  "id",
+                  "label",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "string",
+                    "default": "Comprar",
+                    "maxLength": 20
+                  },
+                  "url": {
+                    "type": "string"
                   }
                 }
               }
